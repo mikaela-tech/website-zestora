@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>TirtaGo 750 – Termos Tahan Dingin 24 Jam</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:wght@600;800&family=DM+Sans:wght@400;500;700&display=swap" rel="stylesheet">
+<style>
+:root{--bg:#eef3f6;--card:#fff;--ink:#0f1e2b;--muted:#51606e;--line:#d5dee5;--accent:#2457f5;--on-accent:#fff;--sun:#f2c94c;--wa:#1faa59;
+box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){color-scheme:dark;--bg:#0c151d;--card:#14212c;--ink:#eaf1f6;--muted:#9fb0bf;--line:#26384a;--accent:#7b9bff;--on-accent:#0c151d;--sun:#f2c94c;--wa:#33c26f}}
+:root[data-theme="dark"]{color-scheme:dark;--bg:#0c151d;--card:#14212c;--ink:#eaf1f6;--muted:#9fb0bf;--line:#26384a;--accent:#7b9bff;--on-accent:#0c151d;--sun:#f2c94c;--wa:#33c26f}
+*,*::before,*::after{box-sizing:border-box}
+html{scroll-behavior:smooth;scroll-padding-top:env(safe-area-inset-top,0px)}
+body{margin:0;background:var(--bg);color:var(--ink);font:400 16px/1.6 "DM Sans",system-ui,-apple-system,"Segoe UI",sans-serif;padding-bottom:84px}
+h1,h2,h3{font-family:"Bricolage Grotesque","DM Sans",system-ui,sans-serif;line-height:1.1;margin:0}
+.wrap{max-width:1040px;margin:0 auto;padding:0 20px}
+section{padding:56px 0}
+h2{font-size:clamp(1.7rem,5vw,2.4rem);font-weight:800;margin-bottom:12px}
+.lead{color:var(--muted);max-width:60ch;margin:0 0 28px}
+a:focus-visible,button:focus-visible,input:focus-visible{outline:3px solid var(--accent);outline-offset:3px}
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:8px;border:0;border-radius:999px;padding:14px 24px;font:700 1rem "DM Sans",sans-serif;cursor:pointer;text-decoration:none;min-height:48px}
+.btn-main{background:var(--accent);color:var(--on-accent)}
+.btn-ghost{background:transparent;color:var(--ink);box-shadow:inset 0 0 0 2px var(--line)}
+.btn-wa{background:var(--wa);color:#fff}
+/* hero */
+.hero{display:grid;gap:24px;align-items:center;padding:36px 0 48px}
+.hero h1{font-size:clamp(3rem,15vw,6.2rem);font-weight:800;letter-spacing:-.03em}
+.hero h1 span{display:block;font-size:.34em;font-weight:600;letter-spacing:0;color:var(--muted);margin-top:10px}
+.hero p{font-size:1.15rem;max-width:36ch;margin:18px 0 26px}
+.cta{display:flex;flex-wrap:wrap;gap:12px}
+.hero-art{background:var(--ink);border-radius:32px;padding:24px;display:grid;place-items:center;min-height:320px}
+.hero-art svg{width:min(100%,230px);height:auto}
+.badge{display:flex;gap:10px;flex-wrap:wrap;margin-top:22px;color:var(--muted);font-size:.95rem}
+.badge b{color:var(--ink)}
+@media(min-width:760px){.hero{grid-template-columns:1.2fr 1fr;padding:64px 0}.hero-art{min-height:440px}}
+/* gallery */
+.stage{background:var(--card);border:1px solid var(--line);border-radius:24px;aspect-ratio:4/3;display:grid;place-items:center;overflow:hidden}
+.stage svg,.stage img{width:100%;height:100%;object-fit:contain}
+.thumbs{display:grid;grid-template-columns:repeat(4,1fr);gap:10px;margin-top:12px}
+.thumb{padding:0;border:2px solid var(--line);background:var(--card);border-radius:14px;overflow:hidden;aspect-ratio:1;cursor:pointer}
+.thumb[aria-current="true"]{border-color:var(--accent)}
+.thumb svg,.thumb img{width:100%;height:100%;object-fit:cover}
+.cap{color:var(--muted);margin:10px 2px 0;font-size:.95rem}
+/* features */
+.cols{display:grid;gap:32px}
+@media(min-width:760px){.cols{grid-template-columns:1fr 1fr}}
+.feat{list-style:none;margin:0;padding:0;display:grid;gap:12px}
+.feat li{display:flex;gap:14px;background:var(--card);border:1px solid var(--line);border-radius:16px;padding:16px}
+.feat svg{flex:none;width:24px;height:24px;color:var(--accent);margin-top:2px}
+.feat strong{display:block}
+.feat span{color:var(--muted);font-size:.95rem}
+/* spec */
+.tablebox{background:var(--card);border:1px solid var(--line);border-radius:20px;overflow-x:auto}
+table{width:100%;border-collapse:collapse}
+th,td{text-align:left;padding:14px 18px;border-bottom:1px solid var(--line);vertical-align:top}
+tr:last-child th,tr:last-child td{border-bottom:0}
+th{width:42%;color:var(--muted);font-weight:500}
+/* contact */
+.contact{background:var(--ink);color:#fff;border-radius:32px;padding:32px 24px}
+.contact h2{color:#fff}.contact p{color:#b8c6d3;margin:0 0 20px;max-width:46ch}
+.soc{display:flex;gap:10px;flex-wrap:wrap;margin-top:20px}
+.soc a{color:#fff;text-decoration:none;border-radius:999px;padding:10px 16px;box-shadow:inset 0 0 0 1.5px #3a4d5f;font-weight:500}
+/* qr */
+.qrbox{display:grid;gap:24px;background:var(--card);border:1px solid var(--line);border-radius:24px;padding:24px}
+@media(min-width:760px){.qrbox{grid-template-columns:auto 1fr;align-items:start}}
+#qr{background:#fff;padding:14px;border-radius:16px;width:max-content;min-width:100px;min-height:100px;border:1px solid var(--line);margin:0 auto}
+#qr img,#qr canvas{display:block}
+label{display:block;font-weight:700;margin-bottom:6px}
+input[type=text]{width:100%;padding:13px 14px;border-radius:12px;border:2px solid var(--line);background:var(--bg);color:var(--ink);font:400 1rem "DM Sans",sans-serif}
+.qrbtns{display:flex;gap:10px;flex-wrap:wrap;margin:12px 0 18px}
+.tips{margin:0;padding-left:20px;color:var(--muted);font-size:.95rem}
+.tips li{margin-bottom:6px}
+#msg{min-height:1.4em;color:var(--accent);font-weight:500;margin:0 0 8px}
+footer{padding:8px 0 40px;color:var(--muted);font-size:.9rem}
+/* bar bawah */
+.bar{position:fixed;left:0;right:0;bottom:0;padding:10px 16px calc(10px + env(safe-area-inset-bottom,0px));background:var(--bg);border-top:1px solid var(--line);display:flex;gap:10px;align-items:center;z-index:20}
+.bar .price{flex:1;line-height:1.2}.bar .price small{color:var(--muted);display:block}.bar .price b{font:800 1.2rem "Bricolage Grotesque",sans-serif}
+@media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}}
+</style>
+</head>
+<body>
+<main class="wrap">
+
+<header class="hero" id="atas">
+  <div>
+    <h1 id="pName">TirtaGo<span id="pTag">Termos 750 ml</span></h1>
+    <p id="pSlogan"></p>
+    <div class="cta">
+      <a class="btn btn-main" href="#galeri">Lihat produk</a>
+      <a class="btn btn-wa" id="waHero" href="#" target="_blank" rel="noopener">Pesan lewat WhatsApp</a>
+    </div>
+    <div class="badge"><span><b>24 jam</b> dingin</span><span><b>12 jam</b> panas</span><span><b>Garansi</b> 1 tahun</span></div>
+  </div>
+  <div class="hero-art" aria-hidden="true" id="heroArt"></div>
+</header>
+
+<section id="galeri">
+  <h2>Galeri produk</h2>
+  <p class="lead">Ketuk gambar kecil untuk melihat pilihan warna.</p>
+  <div class="stage" id="stage"></div>
+  <div class="thumbs" id="thumbs"></div>
+  <p class="cap" id="cap"></p>
+</section>
+
+<section id="fitur">
+  <div class="cols">
+    <div>
+      <h2>Kenapa TirtaGo?</h2>
+      <p class="lead" id="pDesc"></p>
+    </div>
+    <ul class="feat" id="feat"></ul>
+  </div>
+</section>
+
+<section id="spesifikasi">
+  <h2>Spesifikasi</h2>
+  <div class="tablebox"><table id="spec"></table></div>
+</section>
+
+<section id="pesan">
+  <div class="contact">
+    <h2>Mau pesan atau tanya dulu?</h2>
+    <p>Chat langsung dengan kami. Pesan sudah terisi otomatis, tinggal kirim.</p>
+    <a class="btn btn-wa" id="waMain" href="#" target="_blank" rel="noopener">Chat WhatsApp</a>
+    <div class="soc" id="soc"></div>
+  </div>
+</section>
+
+<section id="qrsec">
+  <h2>Buat QR Code halaman ini</h2>
+  <p class="lead">Cetak di kemasan, label, atau brosur. Pelanggan cukup memindai untuk membuka katalog ini.</p>
+  <div class="qrbox">
+    <div id="qr" role="img" aria-label="QR Code"></div>
+    <div>
+      <label for="qrUrl">Alamat yang dijadikan QR</label>
+      <input type="text" id="qrUrl" inputmode="url" autocomplete="off">
+      <div class="qrbtns">
+        <button class="btn btn-main" id="qrMake" type="button">Buat QR</button>
+        <button class="btn btn-ghost" id="qrCopy" type="button">Salin alamat</button>
+      </div>
+      <p id="msg" aria-live="polite"></p>
+      <ul class="tips">
+        <li>Simpan gambar: tekan lama QR di ponsel lalu pilih simpan gambar, atau klik kanan di komputer. Tangkapan layar juga bisa.</li>
+        <li>Cetak minimal 2 × 2 cm, dengan latar putih dan kotak hitam agar mudah terbaca.</li>
+        <li>Uji pindai dari jarak biasa pelanggan sebelum dicetak massal.</li>
+        <li>Jika alamat di kolom ini bukan alamat final halaman Anda, ganti dengan alamat yang benar lalu tekan Buat QR.</li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<footer>© <span id="yr"></span> TirtaGo. Harga dan stok dapat berubah.</footer>
+</main>
+
+<div class="bar">
+  <div class="price"><small>Mulai dari</small><b id="pPrice"></b></div>
+  <a class="btn btn-wa" id="waBar" href="#" target="_blank" rel="noopener">Pesan</a>
+</div>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/qrcodejs/1.0.0/qrcode.min.js"></script>
+<script>
+/* ===== UBAH DATA PRODUK DI SINI ===== */
+var P={
+  name:"TirtaGo", tag:"Termos 750 ml",
+  slogan:"Dingin sampai sore, panas sampai malam. Satu botol untuk semua hari Anda.",
+  price:"Rp189.000",
+  wa:"6281234567890", /* nomor WhatsApp: awali 62, tanpa + atau 0 */
+  waText:"Halo, saya tertarik dengan TirtaGo 750 ml. Apakah stoknya tersedia?",
+  desc:"TirtaGo dibuat untuk orang yang sering di jalan: kuliah, kantor, olahraga, atau perjalanan panjang. Dinding ganda vakum menjaga suhu minuman, dan tutupnya tidak bocor di dalam tas.",
+  features:[
+    ["Tahan suhu lama","Dingin hingga 24 jam, panas hingga 12 jam."],
+    ["Tutup anti bocor","Segel silikon rapat, aman dimasukkan ke tas."],
+    ["Baja tahan karat 304","Food grade, tidak menyisakan rasa logam."],
+    ["Muat di tempat gelas","Diameter 7 cm, pas di mobil dan tas ransel."]
+  ],
+  specs:[["Kapasitas","750 ml"],["Bahan","Baja tahan karat 304 (food grade)"],["Lapisan","Dinding ganda vakum"],["Diameter x tinggi","7 cm x 26 cm"],["Berat","390 g"],["Pilihan warna","Biru, Hitam, Putih, Kuning"],["Garansi","1 tahun"]],
+  colors:[["Biru Laut","#2457f5"],["Hitam Malam","#1b2530"],["Putih Salju","#e8edf1"],["Kuning Matahari","#f2c94c"]],
+  /* Opsional: isi alamat/data-URI foto produk, urut sesuai warna di atas. Kosong = pakai ilustrasi. */
+  images:[],
+  social:[["Instagram","https://instagram.com/"],["TikTok","https://tiktok.com/"],["Facebook","https://facebook.com/"]]
+};
+/* ===================================== */
+function $(i){return document.getElementById(i)}
+function bottle(c){
+  return '<svg viewBox="0 0 200 260" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Termos TirtaGo"><rect x="72" y="14" width="56" height="26" rx="8" fill="#0f1e2b" opacity=".85"/><rect x="66" y="36" width="68" height="16" rx="6" fill="'+c+'" stroke="#00000022"/><rect x="52" y="50" width="96" height="196" rx="28" fill="'+c+'"/><rect x="64" y="66" width="10" height="164" rx="5" fill="#ffffff" opacity=".28"/><rect x="52" y="120" width="96" height="46" fill="#ffffff" opacity=".16"/><text x="100" y="149" text-anchor="middle" font-family="sans-serif" font-weight="800" font-size="17" fill="#fff" opacity=".9">TirtaGo</text></svg>';
+}
+function slide(i,small){
+  if(P.images[i]) return '<img src="'+P.images[i]+'" alt="'+P.colors[i][0]+'">';
+  return '<div style="width:100%;height:100%;display:grid;place-items:center;padding:'+(small?'8%':'4%')+'">'+bottle(P.colors[i][1])+'</div>';
+}
+function show(i){
+  $("stage").innerHTML=slide(i,false);
+  $("cap").textContent="Warna: "+P.colors[i][0];
+  [].forEach.call($("thumbs").children,function(b,k){b.setAttribute("aria-current",k===i?"true":"false")});
+}
+var wa="https://wa.me/"+P.wa+"?text="+encodeURIComponent(P.waText);
+["waHero","waMain","waBar"].forEach(function(id){$(id).href=wa});
+$("pSlogan").textContent=P.slogan; $("pDesc").textContent=P.desc; $("pPrice").textContent=P.price;
+$("heroArt").innerHTML=bottle("#7b9bff");
+$("yr").textContent=new Date().getFullYear();
+P.colors.forEach(function(c,i){
+  var b=document.createElement("button");b.className="thumb";b.type="button";b.setAttribute("aria-label",c[0]);
+  b.innerHTML=slide(i,true);b.onclick=function(){show(i)};$("thumbs").appendChild(b);
+});
+show(0);
+var chk='<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 6 9 17l-5-5"/></svg>';
+$("feat").innerHTML=P.features.map(function(f){return "<li>"+chk+"<div><strong>"+f[0]+"</strong><span>"+f[1]+"</span></div></li>"}).join("");
+$("spec").innerHTML=P.specs.map(function(s){return "<tr><th scope='row'>"+s[0]+"</th><td>"+s[1]+"</td></tr>"}).join("");
+$("soc").innerHTML=P.social.map(function(s){return '<a href="'+s[1]+'" target="_blank" rel="noopener">'+s[0]+'</a>'}).join("");
+/* QR */
+var qrObj=null;
+function makeQR(){
+  var t=$("qrUrl").value.trim(), box=$("qr"); box.innerHTML="";
+  if(!t){$("msg").textContent="Isi alamat terlebih dulu.";return}
+  try{
+    qrObj=new QRCode(box,{text:t,width:200,height:200,colorDark:"#000000",colorLight:"#ffffff",correctLevel:QRCode.CorrectLevel.M});
+    $("msg").textContent="QR siap. Tekan lama gambar untuk menyimpan.";
+  }catch(e){$("msg").textContent="QR tidak bisa dibuat. Periksa koneksi internet lalu muat ulang halaman."}
+}
+$("qrUrl").value=location.href.split("#")[0];
+$("qrMake").onclick=makeQR;
+$("qrUrl").addEventListener("keydown",function(e){if(e.key==="Enter")makeQR()});
+$("qrCopy").onclick=function(){
+  var v=$("qrUrl").value;
+  try{navigator.clipboard.writeText(v).then(function(){$("msg").textContent="Alamat disalin."},function(){$("qrUrl").select();$("msg").textContent="Tekan Ctrl+C untuk menyalin."})}
+  catch(e){$("qrUrl").select();$("msg").textContent="Tekan Ctrl+C untuk menyalin."}
+};
+makeQR();
+</script>
+</body>
+</html>
